@@ -22,6 +22,26 @@ Blockly.defineBlocksWithJsonArray([
     "helpUrl": ""
   },
   {
+    "type": "fill",
+    "message0": "Fill Color %1",
+    "args0": [
+      {
+        "type": "input_value",
+        "name": "fill",
+        "check": [
+          "Number",
+          "Colour"
+        ]
+      }
+    ],
+    "inputsInline": true,
+    "previousStatement": null,
+    "nextStatement": null,
+    "colour": 60,
+    "tooltip": "",
+    "helpUrl": ""
+  },
+  {
     "type": "ellipse",
     "message0": "Ellipse X %1 Y %2 W %3 H %4",
     "args0": [
@@ -244,6 +264,12 @@ Blockly.defineBlocksWithJsonArray([
 Blockly.JavaScript['background'] = function(block) {
   var value_background = Blockly.JavaScript.valueToCode(block, 'background', Blockly.JavaScript.ORDER_ATOMIC);  // TODO: Assemble JavaScript into code variable.
   var code = 'sketch.background'+'('+value_background+');\n';
+  return code;
+};
+
+Blockly.JavaScript['fill'] = function(block) {
+  var value_fill = Blockly.JavaScript.valueToCode(block, 'fill', Blockly.JavaScript.ORDER_ATOMIC);  // TODO: Assemble JavaScript into code variable.
+  var code = 'sketch.fill'+'('+value_fill+');\n';
   return code;
 };
 
@@ -633,13 +659,7 @@ var toolbox = {
       "kind": "category",
       "name": "P5",
       "colour": "60",
-      "contents": [
-
-        {
-          "kind": "block",
-          "type": "background"
-        },
-        
+      "contents": [        
         {
           "kind": "block",
           "type": "runframe"
@@ -708,9 +728,28 @@ var toolbox = {
       ]
     },
 
+    {
+      "kind": "category",
+      "name": "P5 Setting",
+      "colour": "60",
+      "contents": [
+        {
+          "kind": "block",
+          "type": "background"
+        },
+
+        {
+          "kind": "block",
+          "type": "fill"
+        },
+      ]
+    },
+
 
   ]
 }
+
+
 
 
 // WORKSPACE
