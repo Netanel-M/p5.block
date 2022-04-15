@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <script src="https://unpkg.com/blockly/blockly.min.js"></script> 
+   
+
+    <!-- <script src="node_modules/blockly/blockly_compressed.js"></script>
+    <script src="node_modules/blockly/blocks_compressed.js"></script>    
+    <script src="node_modules/blockly/javascript_compressed.js"></script>    
+    <script src="node_modules/blockly/msg/en.js"></script>   -->
+    
+    <script src="main.js" type="module"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+
+</head>
+<body>
+    
+    <div class="container">
+        <div class="nav justify-content-center">
+            <div class="nav-item"><div id="runButton" class="btn btn-success px-4 my-1 mx-4">Run</div></div>
+            <div class="nav-item"><div id="stopButton" class="btn btn-danger px-4 my-1 mx-4">Stop</div></div>
+            <div class="nav-item"><div id="loadButton" class="btn btn-secondary px-4 my-1 mx-4">Load</div></div>
+            <div class="nav-item"><div id="saveButton" class="btn btn-primary px-4 my-1 mx-4">Save</div></div>
+
+
+        </div>
+    </div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col">
+            <div id="blocklyDiv" style="height: 800px; width: 100%;"></div>
+
+        </div>
+
+        <div class="col">
+            <div id="canvas">
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>    
+</body>
+</html>
