@@ -202,6 +202,40 @@ Blockly.defineBlocksWithJsonArray([
     "colour": 60,
     "tooltip": "",
     "helpUrl": ""
+  },
+
+  {
+    "type": "mousemoved",
+    "message0": "Mouse Moved %1 %2",
+    "args0": [
+      {
+        "type": "input_dummy"
+      },
+      {
+        "type": "input_statement",
+        "name": "mousemoved"
+      }
+    ],
+    "colour": 60,
+    "tooltip": "",
+    "helpUrl": ""
+  },
+
+  {
+    "type": "mousedragged",
+    "message0": "Mouse Dragged %1 %2",
+    "args0": [
+      {
+        "type": "input_dummy"
+      },
+      {
+        "type": "input_statement",
+        "name": "mousedragged"
+      }
+    ],
+    "colour": 60,
+    "tooltip": "",
+    "helpUrl": ""
   }
 
 ]);
@@ -266,6 +300,24 @@ Blockly.JavaScript['line2d'] = function(block) {
   var value_y2 = Blockly.JavaScript.valueToCode(block, 'y2', Blockly.JavaScript.ORDER_ATOMIC);
   // TODO: Assemble JavaScript into code variable.
   var code = `sketch.line(${value_x1}, ${value_y1}, ${value_x2}, ${value_y2});\n`;
+  return code;
+};
+
+Blockly.JavaScript['mousemoved'] = function(block) {
+  var statements_mousemoved = Blockly.JavaScript.statementToCode(block, 'mousemoved');
+  // TODO: Assemble JavaScript into code variable.
+  var code = `sketch.mouseMoved = () => {
+    ${statements_mousemoved}  
+    };`;
+  return code;
+};
+
+Blockly.JavaScript['mousedragged'] = function(block) {
+  var statements_mousedragged = Blockly.JavaScript.statementToCode(block, 'mousedragged');
+  // TODO: Assemble JavaScript into code variable.
+  var code = `sketch.mouseDragged = () => {
+    ${statements_mousedragged}  
+    };`;
   return code;
 };
 
@@ -643,8 +695,20 @@ var toolbox = {
           "kind": "block",
           "type": "mousey"
         },
+
+        {
+          "kind": "block",
+          "type": "mousemoved"
+        },
+
+        {
+          "kind": "block",
+          "type": "mousedragged"
+        },
       ]
-    }
+    },
+
+
   ]
 }
 
