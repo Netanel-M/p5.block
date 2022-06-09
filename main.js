@@ -16,8 +16,10 @@ var workspace = Blockly.inject('blocklyDiv', {toolbox: toolbox, grid:
    colour: '#ccc',
    snap: true}});
 
-workspace.registerButtonCallback("createVariable", createVariable)
+var initialState = {"blocks":{"languageVersion":0,"blocks":[{"type":"setup","id":"WmjtBgv8T`VM|X]xG8^~","x":0,"y":0,"inputs":{"setup":{"block":{"type":"createcanvas","id":"B0?jr+H^`A|7aU)!J*=%","next":{"block":{"type":"background","id":"t4whI~LpLUVr9txsPkD{","inputs":{"background":{"block":{"type":"math_number","id":"9IUjqrR8{@}NDIjlbt?h","fields":{"NUM":0}}}}}}}}}},{"type":"runframe","id":"@(pFEN6#}U+V0)`?o?L#","x":0,"y":100}]}}
+Blockly.serialization.workspaces.load(initialState, workspace);
 
+workspace.registerButtonCallback("createVariable", createVariable)
 
   // EVENTS AND P5
 
