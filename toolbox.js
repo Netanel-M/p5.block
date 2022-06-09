@@ -267,6 +267,16 @@ export var toolbox = {
             "kind": "block",
             "type": "colour_blend"
           },
+
+          {
+            "kind": "block",
+            "type": "background"
+          },
+  
+          {
+            "kind": "block",
+            "type": "fill"
+          }
         ]
       }, 
       {
@@ -347,26 +357,7 @@ export var toolbox = {
             "type": "mousedragged"
           },
         ]
-      },
-  
-      {
-        "kind": "category",
-        "name": "P5 Setting",
-        "colour": "60",
-        "contents": [
-          {
-            "kind": "block",
-            "type": "background"
-          },
-  
-          {
-            "kind": "block",
-            "type": "fill"
-          },
-        ]
-      },
-  
-  
+      }
     ]
   }
   
