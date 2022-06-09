@@ -276,6 +276,10 @@ export var toolbox = {
           {
             "kind": "block",
             "type": "fill"
+          },
+          {
+            "kind": "block",
+            "type": "stroke"
           }
         ]
       }, 
@@ -324,6 +328,10 @@ export var toolbox = {
           {
             "kind": "block",
             "type": "line2d"
+          },
+          {
+            "kind": "block",
+            "type": "point"
           },
           {
             "kind": "block",

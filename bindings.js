@@ -10,6 +10,12 @@ Blockly.JavaScript['background'] = function(block) {
     var code = 'sketch.fill'+'('+value_fill+');\n';
     return code;
   };
+
+  Blockly.JavaScript['stroke'] = function(block) {
+    var value_stroke = Blockly.JavaScript.valueToCode(block, 'stroke', Blockly.JavaScript.ORDER_ATOMIC);  // TODO: Assemble JavaScript into code variable.
+    var code = 'sketch.stroke'+'('+value_stroke+');\n';
+    return code;
+  };
   
   Blockly.JavaScript['ellipse'] = function(block) {
     var value_x = Blockly.JavaScript.valueToCode(block, 'X', Blockly.JavaScript.ORDER_ATOMIC);
@@ -64,6 +70,14 @@ Blockly.JavaScript['background'] = function(block) {
     var value_y2 = Blockly.JavaScript.valueToCode(block, 'y2', Blockly.JavaScript.ORDER_ATOMIC);
     // TODO: Assemble JavaScript into code variable.
     var code = `sketch.line(${value_x1}, ${value_y1}, ${value_x2}, ${value_y2});\n`;
+    return code;
+  };
+
+  Blockly.JavaScript['point'] = function(block) {
+    var value_x = Blockly.JavaScript.valueToCode(block, 'x', Blockly.JavaScript.ORDER_ATOMIC);
+    var value_y = Blockly.JavaScript.valueToCode(block, 'y', Blockly.JavaScript.ORDER_ATOMIC);
+    // TODO: Assemble JavaScript into code variable.
+    var code = `sketch.point(${value_x}, ${value_y});\n`;
     return code;
   };
   

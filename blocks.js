@@ -40,6 +40,26 @@ export var BLOCKS = [
       "helpUrl": ""
     },
     {
+        "type": "stroke",
+        "message0": "stroke Color %1",
+        "args0": [
+          {
+            "type": "input_value",
+            "name": "stroke",
+            "check": [
+              "Number",
+              "Colour"
+            ]
+          }
+        ],
+        "inputsInline": true,
+        "previousStatement": null,
+        "nextStatement": null,
+        "colour": 60,
+        "tooltip": "",
+        "helpUrl": ""
+      },
+    {
       "type": "ellipse",
       "message0": "Ellipse X %1 Y %2 W %3 H %4",
       "args0": [
@@ -133,6 +153,30 @@ export var BLOCKS = [
       "tooltip": "Draws a two dimensional line",
       "helpUrl": ""
     },
+
+    {
+        "type": "point",
+        "message0": "Point X %1 Y %2",
+        "args0": [
+            {
+            "type": "input_value",
+            "name": "x",
+            "check": "Number"
+            },
+            {
+            "type": "input_value",
+            "name": "y",
+            "check": "Number"
+            }
+        ],
+        "inputsInline": true,
+        "previousStatement": null,
+        "nextStatement": null,
+        "colour": 60,
+        "tooltip": "Draws a point",
+        "helpUrl": "Draws a point"
+    },
+
     {
       "type": "runframe",
       "message0": "Run every frame %1",
