@@ -16,7 +16,7 @@ export var BLOCKS = [
       "previousStatement": null,
       "nextStatement": null,
       "colour": 60,
-      "tooltip": "",
+      "tooltip": "Set the background color",
       "helpUrl": ""
     },
     {
@@ -36,7 +36,7 @@ export var BLOCKS = [
       "previousStatement": null,
       "nextStatement": null,
       "colour": 60,
-      "tooltip": "",
+      "tooltip": "Set the fill color for shapes",
       "helpUrl": ""
     },
     {
@@ -56,7 +56,7 @@ export var BLOCKS = [
         "previousStatement": null,
         "nextStatement": null,
         "colour": 60,
-        "tooltip": "",
+        "tooltip": "Set the stroke color (border) for shapes or points",
         "helpUrl": ""
       },
     {
@@ -88,11 +88,9 @@ export var BLOCKS = [
       "previousStatement": null,
       "nextStatement": null,
       "colour": 60,
-      "tooltip": "",
+      "tooltip": "Draws an ellipse",
       "helpUrl": ""
     },
-  
-  
   
     {
       "type": "circle",
@@ -174,7 +172,7 @@ export var BLOCKS = [
         "nextStatement": null,
         "colour": 60,
         "tooltip": "Draws a point",
-        "helpUrl": "Draws a point"
+        "helpUrl": ""
     },
 
     {
@@ -187,7 +185,7 @@ export var BLOCKS = [
         }
       ],
       "colour": 60,
-      "tooltip": "",
+      "tooltip": "Runs nested code at every frame",
       "helpUrl": ""
     },
     
@@ -201,7 +199,7 @@ export var BLOCKS = [
         }
       ],
       "colour": 60,
-      "tooltip": "",
+      "tooltip": "Runs when sketch initially loads",
       "helpUrl": ""
     },
   
@@ -211,7 +209,7 @@ export var BLOCKS = [
       "previousStatement": null,
       "nextStatement": null,
       "colour": 60,
-      "tooltip": "",
+      "tooltip": "Creates the canvas upon which you draw on",
       "helpUrl": ""
     },
   
@@ -253,7 +251,7 @@ export var BLOCKS = [
       "message0": "mouseX",
       "output": "Number",
       "colour": 60,
-      "tooltip": "",
+      "tooltip": "Returns the x position of the mouse",
       "helpUrl": ""
     },
   
@@ -262,7 +260,7 @@ export var BLOCKS = [
       "message0": "mouseY",
       "output": "Number",
       "colour": 60,
-      "tooltip": "",
+      "tooltip": "Returns the y position of the mouse",
       "helpUrl": ""
     },
   
@@ -279,7 +277,7 @@ export var BLOCKS = [
         }
       ],
       "colour": 60,
-      "tooltip": "",
+      "tooltip": "Mouse moved event",
       "helpUrl": ""
     },
   
@@ -296,7 +294,7 @@ export var BLOCKS = [
         }
       ],
       "colour": 60,
-      "tooltip": "",
+      "tooltip": "Mouse dragged event",
       "helpUrl": ""
     }
   
