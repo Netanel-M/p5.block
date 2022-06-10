@@ -7,3 +7,12 @@ This is a blockly implementation of p5.js allowing you to create p5.js sketches 
 Pull requests adding additional api functionality are welcome.
 
 You can play with it [here](https://netanel-m.github.io/p5.block/).
+
+Current features include:  
+- All basic blockly blocks including math, subroutines etc
+- Basic sketch configuration, setup block, draw block
+- Some 2D shapes to draw with
+- Some events: mousex, mousey, mousedragged, mousemoved
+- Fill, stroke, strokeWeight, background
+- Capability to run the sketch in the browser with p5.js
+- Save and load capability
