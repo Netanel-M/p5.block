@@ -59,6 +59,27 @@ export var BLOCKS = [
         "tooltip": "Set the stroke color (border) for shapes or points",
         "helpUrl": ""
       },
+
+      {
+        "type": "strokeweight",
+        "message0": "Stroke Weight %1",
+        "args0": [
+          {
+            "type": "input_value",
+            "name": "strokeweight",
+            "check": [
+              "Number",
+              "Colour"
+            ]
+          }
+        ],
+        "inputsInline": true,
+        "previousStatement": null,
+        "nextStatement": null,
+        "colour": 60,
+        "tooltip": "Set the stroke weight (size) for shapes or points",
+        "helpUrl": ""
+      },
     {
       "type": "ellipse",
       "message0": "Ellipse X %1 Y %2 W %3 H %4",

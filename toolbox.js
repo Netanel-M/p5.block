@@ -280,6 +280,10 @@ export var toolbox = {
           {
             "kind": "block",
             "type": "stroke"
+          },
+          {
+            "kind": "block",
+            "type": "strokeweight"
           }
         ]
       }, 

@@ -92,5 +92,3 @@ workspace.registerButtonCallback("createVariable", createVariable)
 
 
   };
-
-//console.log(s);

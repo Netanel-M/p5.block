@@ -17,6 +17,12 @@ Blockly.JavaScript['background'] = function(block) {
     return code;
   };
   
+  Blockly.JavaScript['strokeweight'] = function(block) {
+    var value_strokeweight = Blockly.JavaScript.valueToCode(block, 'strokeweight', Blockly.JavaScript.ORDER_ATOMIC);  // TODO: Assemble JavaScript into code variable.
+    var code = 'sketch.strokeWeight'+'('+value_strokeweight+');\n';
+    return code;
+  };
+
   Blockly.JavaScript['ellipse'] = function(block) {
     var value_x = Blockly.JavaScript.valueToCode(block, 'X', Blockly.JavaScript.ORDER_ATOMIC);
     var value_y = Blockly.JavaScript.valueToCode(block, 'Y', Blockly.JavaScript.ORDER_ATOMIC);
